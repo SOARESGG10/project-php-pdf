@@ -14,12 +14,12 @@ $caminho_real = realpath($caminho);
 $modo = "r";
 
 $arquivo = fopen($caminho_real, $modo);
-$colunas = fgetcsv($arquivo, ",");
+$colunas = fgetcsv($arquivo, null, ",");
 
-while($linha = fgetcsv($arquivo, ",")) {
+while($linha = fgetcsv($arquivo,null, ",")) {
     $alunos[] = array_combine($colunas, $linha);
 }
 
-fclose($file);
+fclose($arquivo);
 
 
