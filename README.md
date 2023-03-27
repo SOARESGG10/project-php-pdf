@@ -7,4 +7,13 @@
 
 ## 🔖 | Bibliotecas
 
--   FPDF 📊
+-   [FPDF](http://www.fpdf.org/) 📊
+
+```php
+# Classe utilizada para gerar o PDF
+
+class FPDF
+{
+ # ...code
+}
+```
